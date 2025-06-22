@@ -28,7 +28,6 @@ procedure To_Do is
       Put_Line ("Add New Item");
       Put("Select Item Name: ");
       Get_Line(Item_Name, Last);
-      Skip_Line;
       Put(Item_Name(1..Last) & " Time: ");
       Get(Item_Time);
       Skip_Line;
@@ -42,6 +41,7 @@ begin
       Put_Line("1: View All 2: Add 3: Exit");
       Put("Select Option: ");
       Get(Choice);
+      Skip_Line;
       case Choice is
          when 1 =>
             All_Items;
