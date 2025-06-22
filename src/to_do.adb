@@ -10,9 +10,15 @@ procedure To_Do is
          Equivalent_Keys => "=");
    use Tasks_Map;
    M : Map;
+
+   procedure All_Items is
+   begin
+      for Item in M.Iterate loop
+         Put_Line(Key (Item) & ": "& Integer'Image(M(Item)));
+      end loop;
+   end All_Items;
+   
 begin
    M.Include("Wash Dishes", 10);
-   for Item in M.Iterate loop
-      Put_Line(Key (Item) & ": "& Integer'Image(M(Item)));
-   end loop;
+   All_Items;
 end To_Do;
