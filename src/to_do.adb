@@ -21,18 +21,19 @@ procedure To_Do is
    end All_Items;
 
    procedure Add_Item is
-      Item_Name : String(1..50);
+      Item_Name : String(1..50) := (others => ' ');
       Item_Time : Integer;
-      Last : Natural;
+      Last : Integer;
    begin
       Put_Line ("Add New Item");
       Put("Select Item Name: ");
       Get_Line(Item_Name, Last);
       Skip_Line;
-      Put(Item_Name & " Time: ");
+      Put(Item_Name(1..Last) & " Time: ");
       Get(Item_Time);
       Skip_Line;
-
+      
+      M.Include(Item_Name(1..Last), Item_Time);
 
    end Add_Item;
 begin
