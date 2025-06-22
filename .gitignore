@@ -1,0 +1,5 @@
+# GPRbuild artifacts
+*.o
+*.ali
+*.exe
+*.cgpr
