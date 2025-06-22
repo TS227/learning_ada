@@ -3,3 +3,7 @@
 *.ali
 *.exe
 *.cgpr
+*.stdout
+*.stderr
+*.bexch
+b__*.ads
