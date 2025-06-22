@@ -5,8 +5,10 @@ procedure Check_Positive is
 begin
    Put("Enter a positive integer: ");
    Get(Number);
+   Put (Number);
    if Number > 0 then
-      Put (Number);
       Put_Line (" Is Positive");
+   else
+      Put_Line (" Is Negative");
    end if;
 end Check_Positive;
