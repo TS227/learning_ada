@@ -1,10 +1,2 @@
 # GPRbuild artifacts
-*.o
-*.ali
-*.exe
-*.cgpr
-*.stdout
-*.stderr
-*.bexch
-b__*.ads
-b__*.adb
+build/
