@@ -1,0 +1,18 @@
+[GENERATED OBJECT FILE]
+b__greet.o
+[PROJECT FILES]
+/usr/share/gpr/_default.gpr
+20231024204336 6e91d611b8e5e87428f40a8a145d99cb
+[BOUND OBJECT FILES]
+/home/tombmx/projects/learning_ada//greet.o
+[GENERATED SOURCE FILES]
+b__greet.ads
+b__greet.adb
+b__greet.ali
+[RESULTING OPTIONS]
+-L/home/tombmx/projects/learning_ada/
+-L/home/tombmx/projects/learning_ada//
+-L/usr/lib/gcc/x86_64-linux-gnu/13/adalib/
+-shared
+-lgnat-13
+-ldl
