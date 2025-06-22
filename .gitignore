@@ -7,3 +7,4 @@
 *.stderr
 *.bexch
 b__*.ads
+b__*.adb
