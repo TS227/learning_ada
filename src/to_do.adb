@@ -20,6 +20,21 @@ procedure To_Do is
       end loop;
    end All_Items;
 
+   procedure Add_Item is
+      Item_Name : String(1..50);
+      Item_Time : Integer;
+      Last : Natural;
+   begin
+      Put_Line ("Add New Item");
+      Put("Select Item Name: ");
+      Get_Line(Item_Name, Last);
+      Skip_Line;
+      Put(Item_Name & " Time: ");
+      Get(Item_Time);
+      Skip_Line;
+
+
+   end Add_Item;
 begin
    M.Include("Wash Dishes", 10);
    loop
@@ -30,7 +45,7 @@ begin
          when 1 =>
             All_Items;
          when 2 =>
-            Put_Line ("test");
+            Add_Item;
          when 3 =>
             Put_Line ("Goodbye");
             exit;
