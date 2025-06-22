@@ -17,8 +17,11 @@ procedure To_Do is
          Put_Line(Key (Item) & ": "& Integer'Image(M(Item)));
       end loop;
    end All_Items;
-   
+
 begin
    M.Include("Wash Dishes", 10);
+   Put("1: View All 2: Add")
+   Put("Select Option: ");
+   Get(Number);
    All_Items;
 end To_Do;
