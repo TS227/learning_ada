@@ -20,8 +20,19 @@ procedure To_Do is
 
 begin
    M.Include("Wash Dishes", 10);
-   Put("1: View All 2: Add")
+   Put("1: View All 2: Add");
    Put("Select Option: ");
-   Get(Number);
-   All_Items;
+   Get(Choice);
+
+   case Choice is
+      when 1 =>
+         All_Items;
+      when 2 =>
+      when 3 =>
+         Put_Line ("Goodbye");
+         exit;
+      when others =>
+         Put("Not An Option");
+   end case;
+         
 end To_Do;
