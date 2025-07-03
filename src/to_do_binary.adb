@@ -9,7 +9,16 @@ procedure To_Do_Binary is
    F : File_Type;
 
    New_Task : Task_Record;
+
+   procedure All_Tasks is
+   begin
+      Open (F, In_File, "tasks.dat");
+      Task_Record'Read (Stream (F), New_Task);
+      Close (F);
+      Ada.Text_IO.Put_Line (New_Task.Name (1 .. 11));
+   end All_Tasks;
 begin
+   All_Tasks;
    New_Task.Name (1 .. 11) := "Wash Dishes";
    Ada.Text_IO.Put_Line (New_Task.Name (1 .. 11));
    Create (F, Out_File, "tasks.dat");
